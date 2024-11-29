@@ -1,0 +1,69 @@
+[
+    {
+        "toplevel_name": "WS Bookmarks"
+    },
+    {
+        "url": "https://myapplications.microsoft.com",
+        "name": "My Applications"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/26003c1c-5b77-49ab-8ab3-36515b6757ff?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "AutoTask PSA"
+    },
+    {
+        "url": "https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView",
+        "name": "Microsoft Lighthouse"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/9e7ec914-598c-43b3-9a42-6c716f4911a8?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "IT Glue"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/09573c95-9883-4be2-bbdf-dcbef8bce3cd?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "Atera RMM"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/eb5b578a-4568-49be-8e81-1e692041cb2e?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "UniFi Network"
+    },
+    {
+        "url": "https://www.gamma-portal.com/framework/home.jspa",
+        "name": "Gamma Portal"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/45342443-b828-4710-86c7-bd5aec7a67ba?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "Cisco Duo"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/f0c5d687-33cc-47e2-82da-bfa26f27b3fc?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "Phished"
+    },
+    {
+        "url": "https://portal.exclaimer.com/reseller",
+        "name": "Exclaimer"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/0765ddf1-39d2-4a20-80b8-61f389a0ab09?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "AWS"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/72987683-83ca-4296-9513-9b897843271d?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "Cisco Meraki"
+    },
+    {
+        "url": "https://portal.dattobackup.com/",
+        "name": "Datto Backup"
+    },
+    {
+        "url": "https://launcher.myapps.microsoft.com/api/signin/18618407-3e62-42ca-a071-4724cf2bab78?tenantId=ff2d4055-e3a1-42c0-8ea8-ec8b28f0f117",
+        "name": "BrightHR"
+    },
+    {
+        "url": "https://cloud.market/login?return=%2Fdashboard",
+        "name": "Giacom Portal (CSP)"
+    },
+    {
+        "url": "https://identity.webrootanywhere.com/v1/Account/login",
+        "name": "Webroot Portal"
+    }
+]
