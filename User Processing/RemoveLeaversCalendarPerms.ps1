@@ -17,7 +17,7 @@ if (-not (Get-Module -ListAvailable -Name ExchangeOnlineManagement)) {
 Import-Module ExchangeOnlineManagement
 
 # Prompt for the leaver's email address
-$emailAddress = Read-Host -Prompt "Enter the leaver’s email address (e.g., user@domain.com)"
+$emailAddress = Read-Host -Prompt "Enter the leaver's email address (e.g., user@domain.com)"
 if (-not $emailAddress -or -not $emailAddress.Contains("@")) {
     Write-Host "Invalid email address provided. Exiting script." -ForegroundColor Red
     return
