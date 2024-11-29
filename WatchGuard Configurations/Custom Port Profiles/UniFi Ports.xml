@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+ <product-grade />
+ <rs-version />
+ <using-cpm-profile>0</using-cpm-profile>
+ <for-version>11.7</for-version>
+ <xml-purpose>2</xml-purpose>
+ <base-model />
+ <service-list>
+  <service>
+   <name>UniFi</name>
+   <description>UniFi Service Ports</description>
+   <property>0</property>
+   <proxy-type />
+   <service-item>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>8080</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>8443</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>8880</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>8843</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>6789</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>17</protocol>
+     <server-port>3478</server-port>
+    </member>
+   </service-item>
+   <idle-timeout>0</idle-timeout>
+  </service>
+ </service-list>
+ <policy-view>
+  <ui-pm>
+   <service-additional-info-list>
+    <service-additional-info>
+     <service>UniFi</service>
+     <builtin-service>false</builtin-service>
+     <proxy-service>false</proxy-service>
+    </service-additional-info>
+   </service-additional-info-list>
+  </ui-pm>
+ </policy-view>
+</profile>
+<!--DOCTYPE rs-profile SYSTEM "profile.dtd"-->

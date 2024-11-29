@@ -9,7 +9,7 @@
  <service-list>
   <service>
    <name>RingCentral</name>
-   <description />
+   <description>RingCentral Service Ports</description>
    <property>0</property>
    <proxy-type />
    <service-item>

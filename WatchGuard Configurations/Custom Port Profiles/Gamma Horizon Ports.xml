@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+ <product-grade />
+ <rs-version />
+ <using-cpm-profile>0</using-cpm-profile>
+ <for-version>11.7</for-version>
+ <xml-purpose>2</xml-purpose>
+ <base-model />
+ <service-list>
+  <service>
+   <name>Gamma Horizon</name>
+   <description>Gamma Horizon Service Ports</description>
+   <property>0</property>
+   <proxy-type />
+   <service-item>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>8011</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>5222</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>389</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>636</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>6</protocol>
+     <server-port>5080</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>17</protocol>
+     <server-port>123</server-port>
+    </member>
+    <member>
+     <type>1</type>
+     <protocol>17</protocol>
+     <server-port>5060</server-port>
+    </member>
+    <member>
+     <type>2</type>
+     <protocol>17</protocol>
+     <start-server-port>10000</start-server-port>
+     <end-server-port>60000</end-server-port>
+    </member>
+   </service-item>
+   <idle-timeout>0</idle-timeout>
+  </service>
+ </service-list>
+ <policy-view>
+  <ui-pm>
+   <service-additional-info-list>
+    <service-additional-info>
+     <service>Gamma Horizon</service>
+     <builtin-service>false</builtin-service>
+     <proxy-service>false</proxy-service>
+    </service-additional-info>
+   </service-additional-info-list>
+  </ui-pm>
+ </policy-view>
+</profile>
+<!--DOCTYPE rs-profile SYSTEM "profile.dtd"-->
