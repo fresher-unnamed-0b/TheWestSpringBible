@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Muli', sans-serif;
+    color: #5B7383;
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  .nav-wrapper {
+    background-color: #2C3B4E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Company Logo */
+  .company-logo {
+    height: 40px; /* Adjust size as needed */
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .brand-logo {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .brand-logo.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    color: #2C3B4E;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #EB86B7;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: #5B7383;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  .page-footer {
+    padding: 20px 0;
+    color: #FFFFFF;
+  }
+  
