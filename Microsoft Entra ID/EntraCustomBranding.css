@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;900&display=swap');
+.ext-sign-in-box {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ext-title {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    color: #2C3B4E;
+}
+.ext-subtitle {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+.ext-error {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+.ext-input.ext-text-box {
+    border: none;
+    border-bottom: 2px solid #5B7383;
+    outline: none;
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+}
+.ext-input.ext-text-box.ext-has-error {
+    border-bottom-color: red;
+    transition: border-bottom-color 0.3s ease;
+}
+.ext-input.ext-text-box:hover {
+    border-bottom-color: #5B7383;
+}
+.ext-input.ext-text-box:focus {
+    border-bottom-color: #5B7383;
+}
+.ext-input.ext-text-box:focus:hover {
+    border-bottom-color: #5B7383;
+}
+.ext-button.ext-primary {
+    background-color: #2C3B4E;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.ext-button.ext-primary:hover {
+    background-color: #32C6F4;
+}
+.ext-button.ext-primary:focus {
+    background-color: #2C3B4E;
+}
+.ext-button.ext-primary:focus:hover {
+    background-color: #32C6F4;
+}
+.ext-button.ext-primary:active {
+    background-color: #1f7994;
+}
+.ext-button.ext-secondary {
+    background-color: #808080;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.ext-button.ext-secondary:hover {
+    background-color: #595959;
+}
+.ext-button.ext-secondary:focus {
+    background-color: #808080;
+}
+.ext-button.ext-secondary:focus:hover {
+    background-color: #595959;
+}
+.ext-button.ext-secondary:active {
+    background-color: #3c3c3c;
+}
+.ext-promoted-fed-cred-box {
+    border-radius: 20px;
+    overflow: hidden;
+}
