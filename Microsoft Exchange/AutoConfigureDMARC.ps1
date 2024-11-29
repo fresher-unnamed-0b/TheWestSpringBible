@@ -2,6 +2,24 @@
 
 $acceptedDomains = Get-AcceptedDomain
 
+# Function to lookup nameservers (NS) for the domain
+function Get-DNSHost {
+    param (
+        [string]$Domain
+    )
+    
+    try {
+        # Query DNS for the authoritative nameservers (NS records)
+        $nameServers = Resolve-DnsName -Name $domain -Type NS
+        
+        # Extract and return nameserver names
+        $nameServers | Select-Object -ExpandProperty NameHost
+    } catch {
+        Write-Host "Failed to lookup nameservers for $domain"
+        return $null
+    }
+}
+
 # Loop through each accepted domain
 foreach ($domain in $acceptedDomains) {
     # Check if the domain is not the default .onmicrosoft.com domain and does not end with excl.cloud
@@ -15,9 +33,22 @@ foreach ($domain in $acceptedDomains) {
         # Generate the DMARC record text
         $dmarcRecord = "v=DMARC1; p=reject; rua=mailto:dmarc-rua@$($domain.Name); ruf=mailto:dmarc-ruf@$($domain.Name); fo=1; pct=100; ri=86400; adkim=s; aspf=s"
 
+        Write-Host ("=" * 80)
+        Write-Host ""
+        
         # Output the DMARC record
         Write-Host "DMARC Record for $($domain.Name):"
         Write-Host $dmarcRecord
         Write-Host ""
+
+        # Lookup nameservers (NS) for the domain
+        $nameServers = Get-DNSHost -Domain $domain.Name
+        if ($nameServers) {
+            Write-Host "DNS Hosts for $($domain.Name):"
+            $nameServers | ForEach-Object { Write-Host $_ }
+            Write-Host ""
+        }
+
+        Write-Host ("=" * 80)
     }
 }
