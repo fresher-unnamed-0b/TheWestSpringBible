@@ -1,0 +1,33 @@
+{
+    "Rules": [ 
+        { 
+            "SettingName": "Atera RMM Agent",
+            "Operator": "IsEquals",
+            "DataType": "Int64",
+            "Operand": "4",
+            "MoreInfoUrl": "https://bing.com",
+            "RemediationStrings": [ 
+                { 
+                    "Language": "en_US",
+                    "Title": "Atera RMM Agent",
+                    "Description": "The Atera RMM agent is not running on your computer. Please contact internal support for assistance."
+                }
+            ]
+        },
+        { 
+            "SettingName": "Duo Authentication",
+            "Operator": "IsEquals",
+            "DataType": "String",
+            "Operand": "{E18C023C-1FF0-454E-AAF3-2E90139A88D9}",
+            "MoreInfoUrl": "https://bing.com",
+            "RemediationStrings": [ 
+                { 
+                    "Language": "en_US",
+                    "Title": "Duo Authentication",
+                    "Description": "The Duo Authentication client is not installed on your computer. It should install automatically, but please contact internal support if the issue continues."
+                }
+            ]
+        }
+    ]
+ }
+ 
