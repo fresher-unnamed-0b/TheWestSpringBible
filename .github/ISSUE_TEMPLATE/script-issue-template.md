@@ -1,57 +1,45 @@
+---
 name: Script Not Working
 about: Use this template if a script isn't working as expected.
+title: "Script Bug: [Brief Description]"
+labels: bug
+assignees: fresher-unnamed-0b
+---
 
-title: "[Script Issue] - <Brief description of the problem>"
-labels: bug, script-issue
-assignees: ''
+## Description
+Please provide a detailed description of the issue you're facing with the script.
 
-body:
-  - type: markdown
-    attributes:
-      value: |
-        ## Description
-        Please provide a detailed description of the issue you're facing with the script.
+### Which script are you having issues with?
+Provide the name or description of the script causing the issue.
+**Example:** `cleanup.sh`, `data-migration.ps1`
 
-  - type: input
-    attributes:
-      label: "Which script are you having issues with?"
-      description: "Provide the name or description of the script causing the issue."
-      placeholder: "e.g., cleanup.sh, data-migration.ps1"
-      required: true
+### What behavior were you expecting?
+Explain what you expected the script to do.
+**Example:** I expected the script to delete temp files.
 
-  - type: input
-    attributes:
-      label: "What behavior were you expecting?"
-      description: "Explain what you expected the script to do."
-      placeholder: "e.g., I expected the script to delete temp files"
-      required: true
+### What did you observe instead?
+Explain what actually happened when you ran the script.
+**Example:** The script returned an error saying 'File not found'.
 
-  - type: textarea
-    attributes:
-      label: "What did you observe instead?"
-      description: "Explain what actually happened when you ran the script."
-      placeholder: "e.g., The script returned an error saying 'File not found'."
-      required: true
+### What operating system and version are you using?
+Please include the operating system (e.g., Windows 10, Ubuntu 20.04) and version.
 
-  - type: input
-    attributes:
-      label: "What operating system and version are you using?"
-      description: "Please include the operating system (e.g., Windows 10, Ubuntu 20.04) and version."
-      required: true
+### What version of the script are you using?
+If possible, include the version number or commit hash of the script that caused the issue.
 
-  - type: input
-    attributes:
-      label: "What version of the script are you using?"
-      description: "If possible, include the version number or commit hash of the script that caused the issue."
-      required: false
+### Any error messages or logs?
+Include any error messages, output logs, or terminal output that may help in diagnosing the issue.
+**Example:** Error: 'Permission denied'
 
-  - type: textarea
-    attributes:
-      label: "Any error messages or logs?"
-      description: "Include any error messages, output logs, or terminal output that may help in diagnosing the issue."
-      placeholder: "e.g., Error: 'Permission denied'"
-      required: false
+### Have you made any modifications to the script?
+Let us know if you've made any custom changes to the script.
 
-  - type: input
-    attributes:
-      label: "Have you made any modifications to t
+### Steps to reproduce
+If applicable, describe the steps to reproduce the issue.
+**Example:** 1. Run the script with argument 'temp_cleanup.sh'
+
+### Have you tried the following troubleshooting steps?
+- [ ] Running the script with elevated permissions (admin/root)
+- [ ] Checking for script updates
+- [ ] Reviewing the script for any obvious errors
+- [ ] Consulting the documentation
