@@ -1,18 +1,20 @@
 ---
-name: New Documentation Request
-about: Submit this issue to request new documentation.
-title: New Documentation Request
+name: New Documentation or Script Request
+about: Request new documentation or a script to address a specific issue.
+title: New Request: [Brief Description]
 labels: request
 assignees: fresher-unnamed-0b
-
 ---
 
-# New Documentation Request
+# Request for Documentation or Script  
 
-Submit this issue to request a Senior Technical Analyst produce some new documentation or a new script to resolve an issue you're facing.
+Use this template to request new documentation or a script to address an issue or improve workflows.  
 
-**Service (Exchange, SharePoint etc)**
-*<>*
+**Service or Area (e.g., Exchange, SharePoint, Intune, etc.):**  
+`[Provide the relevant service or area]`  
 
-**What would you like documented?**
-*<>*
+**Summary of Request:**  
+`[Briefly describe what you need documented or scripted.]`  
+
+**Details or Specific Requirements:**  
+`[Provide any specific details, examples, or use cases to clarify the request.]`  
