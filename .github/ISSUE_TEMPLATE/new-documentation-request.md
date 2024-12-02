@@ -1,7 +1,7 @@
 ---
 name: New Documentation or Script Request
 about: Request new documentation or a script to address a specific issue.
-title: New Request: [Brief Description]
+title: "New Request: [Brief Description]"
 labels: request
 assignees: fresher-unnamed-0b
 ---
