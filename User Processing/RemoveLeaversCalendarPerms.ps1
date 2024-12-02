@@ -1,4 +1,4 @@
-# Check if the Exchange Online Management module is installed
+# Define the Exchange Online Management module installation check
 Write-Host "Checking for Exchange Online Management module..."
 if (-not (Get-Module -ListAvailable -Name ExchangeOnlineManagement)) {
     Write-Host "Exchange Online Management module not found. Installing..." -ForegroundColor Yellow
@@ -91,13 +91,12 @@ try {
 # Remove Calendar Permissions
 Write-Host "Processing Calendar Permissions..."
 try {
-    $userMailboxes = Get-Mailbox
+    $userMailboxes = Get-Mailbox -ResultSize Unlimited
     $mailboxCount = 0
     foreach ($mailbox in $userMailboxes) {
         $mailboxCount++
         Remove-MailboxFolderPermission -Identity "$($mailbox.PrimarySmtpAddress):\Calendar" -User $emailAddress -Confirm:$false -ErrorAction SilentlyContinue
         Write-Progress -Activity 'Processing Users' -CurrentOperation $mailbox.PrimarySmtpAddress -PercentComplete (($mailboxCount / $userMailboxes.Count) * 100)
-        Start-Sleep -Milliseconds 200
     }
     Write-Host "Calendar permissions removed successfully." -ForegroundColor Green
 } catch {

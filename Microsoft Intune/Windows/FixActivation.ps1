@@ -2,7 +2,7 @@
 $registryPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MfaRequiredInClipRenew"
 $registryValueName = "Verify Multifactor Authentication in ClipRenew"
 $registryValueData = 0  # DWORD value of 0
-$sid = New-Object System.Security.Principal.SecurityIdentifier("S-1-5-4")  # SID for interactive group
+$sid = New-Object System.Security.Principal.SecurityIdentifier("S-1-5-4")  # SID for Interactive group
 
 # Check if the registry key already exists
 if (-not (Test-Path -Path $registryPath)) {
@@ -17,5 +17,10 @@ $ruleSID = New-Object System.Security.AccessControl.RegistryAccessRule($sid, "Fu
 $acl.AddAccessRule($ruleSID)
 Set-Acl -Path $registryPath -AclObject $acl
 
-# Start the scheduled task
-Get-ScheduledTask -TaskName 'LicenseAcquisition' | Start-ScheduledTask
+# Start the scheduled task if it exists
+$taskName = 'LicenseAcquisition'
+if (Get-ScheduledTask -TaskName $taskName -ErrorAction SilentlyContinue) {
+    Start-ScheduledTask -TaskName $taskName
+} else {
+    Write-Host "Scheduled Task '$taskName' does not exist."
+}

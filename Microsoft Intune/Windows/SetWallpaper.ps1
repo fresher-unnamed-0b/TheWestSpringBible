@@ -5,8 +5,9 @@ $wallpaperUrl = "<WALLPAPER URL HERE>"
 $wallpaperPath = "C:\WestSpring IT\MicrosoftIntune\desktop-wallpaper.jpeg"
 
 # Ensure the directory exists, create it if it doesn't
-if (!(Test-Path -Path "C:\WestSpring IT\MicrosoftIntune")) {
-    New-Item -ItemType Directory -Path "C:\WestSpring IT\MicrosoftIntune" -Force
+$directoryPath = "C:\WestSpring IT\MicrosoftIntune"
+if (!(Test-Path -Path $directoryPath)) {
+    New-Item -ItemType Directory -Path $directoryPath -Force
 }
 
 # Download the wallpaper image
@@ -18,5 +19,8 @@ $wallpaperRegistryKey = "HKCU:\Control Panel\Desktop"
 # Update the registry to set the downloaded image as wallpaper
 Set-ItemProperty -Path $wallpaperRegistryKey -Name Wallpaper -Value $wallpaperPath
 
+# Set the wallpaper style (0 = Centered, 2 = Stretched, 6 = Fit, 10 = Fill)
+Set-ItemProperty -Path $wallpaperRegistryKey -Name WallpaperStyle -Value 2  # Change to your preferred style
+
 # Refresh the desktop to apply the wallpaper
-RUNDLL32.EXE user32.dll, UpdatePerUserSystemParameters ,1 ,True
+RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters

@@ -6,6 +6,9 @@ wallpaperURL="<WALLPAPER URL HERE>"
 # Define the path to save the wallpaper in /Users/Shared
 wallpaperPath="/Users/Shared/WestSpring IT/MicrosoftIntune/desktop-wallpaper.jpeg"
 
+# Ensure the target directory exists
+mkdir -p "/Users/Shared/WestSpring IT/MicrosoftIntune"
+
 # Download the wallpaper
 curl -o "$wallpaperPath" "$wallpaperURL"
 
