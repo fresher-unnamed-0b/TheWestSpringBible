@@ -1,0 +1,35 @@
+name: Clean Trailing Lines
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's different
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to the main branch
+
+jobs:
+  clean_trailing_lines:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: Remove trailing whitespace and empty lines
+        run: |
+          # Install a tool to remove trailing whitespace
+          sudo apt-get install -y dos2unix
+
+          # Find all files (excluding binary files) and remove trailing whitespace and empty lines
+          find . -type f -not -path '*/node_modules/*' -not -path '*/.git/*' -not -path '*/vendor/*' -exec dos2unix -n {} {} \;
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add .
+          git commit -m "Remove trailing lines and whitespace" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
