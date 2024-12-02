@@ -1,6 +1,12 @@
 /* Importing the Mulish font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Styling for the sign-in box container */
+.ext-sign-in-box {
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
 /* Title styling */
 .ext-title {
     color: #2C3B4E; /* Navy color */
@@ -71,7 +77,7 @@
     font-family: 'Mulish', sans-serif; /* Font */
     font-weight: 700; /* Medium weight */
     padding: 10px 20px; /* Padding */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 /* Secondary button hover */
