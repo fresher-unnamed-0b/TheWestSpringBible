@@ -35,7 +35,7 @@
 
 /* Input field hover state */
 .ext-input.ext-text-box:hover {
-    border-bottom-color: #EB86B7; /* Pink on hover */
+    border-bottom: 2px solid #EB86B7; /* Pink on hover */
 }
 
 /* Input error state */

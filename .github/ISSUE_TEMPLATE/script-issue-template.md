@@ -11,7 +11,7 @@ Please provide a detailed description of the issue you're facing with the script
 
 ### Which script are you having issues with?
 Provide the name or description of the script causing the issue.
-**Example:** `cleanup.sh`, `data-migration.ps1`
+**Example:** `AutoConfigureDMARC.ps1`, `FixActivation.ps1`
 
 ### What behavior were you expecting?
 Explain what you expected the script to do.
@@ -22,10 +22,10 @@ Explain what actually happened when you ran the script.
 **Example:** The script returned an error saying 'File not found'.
 
 ### What operating system and version are you using?
-Please include the operating system (e.g., Windows 10, Ubuntu 20.04) and version.
+Please include the operating system (e.g., Windows 10, Windows 11) and version.
 
 ### What version of the script are you using?
-If possible, include the version number or commit hash of the script that caused the issue.
+If possible, include the commit hash of the script that caused the issue.
 
 ### Any error messages or logs?
 Include any error messages, output logs, or terminal output that may help in diagnosing the issue.
@@ -39,7 +39,5 @@ If applicable, describe the steps to reproduce the issue.
 **Example:** 1. Run the script with argument 'temp_cleanup.sh'
 
 ### Have you tried the following troubleshooting steps?
-- [ ] Running the script with elevated permissions (admin/root)
-- [ ] Checking for script updates
+- [ ] Running the script with elevated permissions (admin/sudo)
 - [ ] Reviewing the script for any obvious errors
-- [ ] Consulting the documentation

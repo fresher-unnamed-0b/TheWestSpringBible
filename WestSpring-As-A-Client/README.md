@@ -1,5 +1,5 @@
-# WestSpring-As-A-Client (WaaC)
+![enter image description here](https://ukswestspringit.blob.core.windows.net/intune-content/company-logo.png)
 
-Files/scripts in this folder are part of WestSpring IT's internal Microsoft Intune deployment. 
+This folder contains files and scripts that are part of WestSpring IT's internal Microsoft Intune deployment.
 
-⚠️ **Please don't edit or remove them unless advised** ⚠️ 
+⚠️ **Please do not edit or remove these files unless instructed** ⚠️
