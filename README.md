@@ -1,7 +1,7 @@
 # TheWestSpringBible
 
-This repository houses some useful scripts and troubleshooting knowledge collected by the team at WestSpring IT. 
+This repository contains a collection of useful scripts and troubleshooting knowledge gathered by the WestSpring IT team.
 
-ℹ️ The contents of this repository shouldn't be considered official WestSpring IT documentation. The company WestSpring IT are not afiliated with this repository, and it's completely populated and maintained by individual employees. 
+ℹ️ Please note that the contents of this repository are not official WestSpring IT documentation. WestSpring IT is not affiliated with this repository, which is entirely created and maintained by individual employees. 
 
-**🚫 Under no circumstances should client data be stored within this repository 🚫**
+**🚫 Client data must not be stored in this repository under any circumstances. 🚫**
