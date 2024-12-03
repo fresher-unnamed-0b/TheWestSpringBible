@@ -1,43 +1,43 @@
 ---
 name: Script Not Working
-about: Use this template if a script isn't working as expected.
+about: Report that a script in this repository is not functioning properly.
 title: "Script Bug: [Brief Description]"
 labels: bug
 assignees: fresher-unnamed-0b
 ---
 
-## Description
-Please provide a detailed description of the issue you're facing with the script.
+# Script Not Working
 
-### Which script are you having issues with?
-Provide the name or description of the script causing the issue.
-**Example:** `AutoConfigureDMARC.ps1`, `FixActivation.ps1`
+Report that a script in this repository is not functioning properly.
 
-### What behavior were you expecting?
-Explain what you expected the script to do.
-**Example:** I expected the script to delete temp files.
+  
 
-### What did you observe instead?
-Explain what actually happened when you ran the script.
-**Example:** The script returned an error saying 'File not found'.
+**Which script are you having issues with?**
 
-### What operating system and version are you using?
-Please include the operating system (e.g., Windows 10, Windows 11) and version.
+`[Provide the name or description of the script causing the issue]`
 
-### What version of the script are you using?
-If possible, include the commit hash of the script that caused the issue.
+**What behavior were you expecting?**
 
-### Any error messages or logs?
-Include any error messages, output logs, or terminal output that may help in diagnosing the issue.
-**Example:** Error: 'Permission denied'
+`[Explain what you expected the script to do]`
 
-### Have you made any modifications to the script?
-Let us know if you've made any custom changes to the script.
+**What did the script do instead?**
 
-### Steps to reproduce
-If applicable, describe the steps to reproduce the issue.
-**Example:** 1. Run the script with argument 'temp_cleanup.sh'
+`[Explain what actually happened when you ran the script]`
 
-### Have you tried the following troubleshooting steps?
-- [ ] Running the script with elevated permissions (admin/sudo)
-- [ ] Reviewing the script for any obvious errors
+**What operating system and version are you using?**
+
+`[Please include the operating system (e.g., Windows 10, Windows 11) and version]`
+
+**What version of the script are you using?**
+
+`[If possible, include the commit hash of the script that caused the issue]`
+
+**Did the script present an error?**
+
+`[Detail any errors provided by the script]`
+
+**Have you checked the following?**
+
+- [ ] You've tried running the script with elevated privileges? (admin/sudo)
+
+- [ ] You've checked the script for any obvious errors/mistakes?
