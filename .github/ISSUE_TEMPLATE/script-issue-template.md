@@ -10,8 +10,6 @@ assignees: fresher-unnamed-0b
 
 Report that a script in this repository is not functioning properly.
 
-  
-
 **Which script are you having issues with?**
 
 `[Provide the name or description of the script causing the issue]`
