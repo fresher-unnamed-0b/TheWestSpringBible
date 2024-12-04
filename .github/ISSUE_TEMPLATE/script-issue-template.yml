@@ -64,6 +64,4 @@ body:
       label: Have you tried the following?
       options:
         - label: I've tried running the script both as a standard user, and with elevated privileges.
-        required: true
         - label: I've checked the script myself for any obvious errors or mistakes.
-        required: true
