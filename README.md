@@ -3,7 +3,7 @@
 
 This repository contains a collection of useful scripts and troubleshooting knowledge gathered by the WestSpring IT team.
 
-<font color="red">**🚫 Client data must not be stored in this repository under any circumstances 🚫**</font>
+**🚫 Client data must not be stored in this repository under any circumstances 🚫**
 
 ## Other Useful Resources
 
