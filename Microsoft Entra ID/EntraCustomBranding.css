@@ -1,101 +1,85 @@
-/* Importing the Mulish font */
+/* Import Mulish font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Styling for the sign-in box container */
+/* Login Box */
 .ext-sign-in-box {
-    border-radius: 20px; /* Rounded corners */
-    overflow: hidden; /* Ensures content doesn't overflow the container */
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-/* Title styling */
+/* Text Styling */
 .ext-title {
-    color: #2C3B4E; /* Navy color */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 900; /* Bold weight */
+    color: #2C3B4E;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
 }
-
-/* Subtitle and error styling */
 .ext-subtitle, .ext-error {
-    color: #5B7383; /* Soft black */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 300; /* Light weight */
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
 }
 
-/* Input field styling */
+/* Input Box */
 .ext-input.ext-text-box {
-    border: none; /* No border */
-    border-bottom: 2px solid #2C3B4E; /* Navy bottom border */
-    color: #5B7383; /* Soft black text */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 300; /* Light weight */
-    outline: none; /* Remove outline */
-    padding: 10px; /* Padding */
-    transition: border-bottom-color 0.3s ease; /* Smooth border transition */
+    border: none;
+    border-bottom: 2px solid #2C3B4E;
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    outline: none;
+    padding: 10px;
+    transition: border-bottom-color 0.3s ease;
 }
-
-/* Input field hover state */
 .ext-input.ext-text-box:hover {
-    border-bottom: 2px solid #EB86B7; /* Pink on hover */
+    border-bottom: 2px solid #EB86B7;
 }
-
-/* Input error state */
 .ext-input.ext-text-box.ext-has-error {
-    border-bottom: 2px solid red; /* Red border */
+    border-bottom: 2px solid red;
 }
 
-/* Primary button styling */
+/* Buttons */
 .ext-button.ext-primary {
-    background-color: #2C3B4E; /* Navy background */
-    border: none; /* No border */
-    border-radius: 20px; /* Rounded corners */
-    color: #FFFFFF; /* White text */
-    cursor: pointer; /* Pointer on hover */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 700; /* Medium weight */
-    padding: 10px 20px; /* Padding */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    background-color: #2C3B4E;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
-
-/* Primary button hover */
 .ext-button.ext-primary:hover,
 .ext-button.ext-primary:focus {
-    background-color: #32C6F4; /* Light blue on hover/focus */
+    background-color: #32C6F4;
 }
-
-/* Primary button active state */
 .ext-button.ext-primary:active {
-    background-color: #1A8FB7; /* Dark blue when clicked */
+    background-color: #1A8FB7;
 }
-
-/* Secondary button styling */
 .ext-button.ext-secondary {
-    background-color: #808080; /* Grey background */
-    border: none; /* No border */
-    border-radius: 20px; /* Rounded corners */
-    color: #FFFFFF; /* White text */
-    cursor: pointer; /* Pointer on hover */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 700; /* Medium weight */
-    padding: 10px 20px; /* Padding */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: #808080;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
-
-/* Secondary button hover */
 .ext-button.ext-secondary:hover,
 .ext-button.ext-secondary:focus {
-    background-color: #6E6E6E; /* Darker grey on hover/focus */
+    background-color: #6E6E6E;
 }
-
-/* Secondary button active state */
 .ext-button.ext-secondary:active {
-    background-color: #5C5C5C; /* Darker grey when clicked */
+    background-color: #5C5C5C;
 }
 
-/* Promoted federated credentials box */
+/* Sign in Options */
 .ext-promoted-fed-cred-box {
-    border-radius: 20px; /* Rounded corners */
-    color: #5B7383; /* Soft black text */
-    font-family: 'Mulish', sans-serif; /* Font */
-    font-weight: 300; /* Light weight */
-    overflow: hidden; /* Prevent overflow */
+    border-radius: 20px;
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
 }

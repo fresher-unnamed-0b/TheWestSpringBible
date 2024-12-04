@@ -1,0 +1,37 @@
+name: New Script Request
+description: Request that a new script be produced to solve a problem or streamline a workflow.
+title: "Script Request: [Brief Description]"
+labels: 
+  - request
+assignees: 
+  - fresher-unnamed-0b
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # New Script Request  
+        Request that a new script be produced to solve a problem or streamline a workflow.
+
+  - type: input
+    id: service_area
+    attributes:
+      label: Service or Area
+      description: Provide the relevant service or area (e.g., Exchange, SharePoint, Intune, etc.).
+      placeholder: e.g., Intune
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of Request
+      description: Briefly describe what you'd like the script to do.
+      placeholder: e.g., "Automate device enrollment in Intune."
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details or Specific Requirements
+      description: Provide any specific details, examples, or use cases to clarify the request.
+      placeholder: e.g., "The script should generate a CSV report of enrolled devices."
+      required: false
