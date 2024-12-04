@@ -1,0 +1,69 @@
+name: Script Not Working
+description: Report that a script in this repository is not functioning properly.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: 
+  -fresher-unnamed-0b
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Script Not Working
+        Report that a script in this repository is not functioning properly.
+  - type: input
+    id: script_name
+    attributes:
+      label: Script Name
+      description: Provide the name or description of the script causing the issue.
+      placeholder: e.g. ConnectToExchange.ps1, GetAutopilotHash.ps1
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: What behaviour were you expecting?
+      description: Explain what you expected the script to do.
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behaviour
+    attributes:
+      label: "What did the script to instead?"
+      description: Explain what actually happened when you ran the script.
+    validations:
+      required: true
+  - type: input
+    id: device_os
+    attributes:
+      label: What operating system and version are you using?
+      description: Pleas einclude the operating system and version.
+      placeholder: e.g. Windows 10, Windows 11, macOS Ventura
+    validations:
+      required: true
+  - type: input
+    id: script_commit
+    attributes:
+      label: What version of the script are you using?
+      description: Where possible, please include the commit number of the script that caused the issue.
+      placeholder: e.g. 8f5ae0b, dcbf07e
+    validations:
+      required: false
+  - type: checkboxes
+    id: did_it_error
+    attributes:
+      label: Did the script present an error?
+      description: Detail any errors provided by the script.
+      options:
+        - label: Yes, I received an error.
+        - label: No, I didn't receive any error.
+    validations:
+      required: false
+  - type: checkboxes
+    id: have_you_checked
+    attributes:
+      label: Have you tried the following?
+      options:
+        - label: I've tried running the script both as a standard user, and with elevated privileges.
+        required: true
+        - label: I've checked the script myself for any obvious errors or mistakes.
+        required: true
