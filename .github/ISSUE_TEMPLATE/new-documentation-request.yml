@@ -14,7 +14,7 @@ body:
     id: service_area
     attributes:
       label: Service or Area
-      description: What service or area shall this script relate to?
+      description: What service should this script work with?
       placeholder: e.g. Intune, Exchange, Entra ID
     validations:
       required: true
@@ -22,15 +22,15 @@ body:
     id: summary
     attributes:
       label: Summary of Request
-      description: Briefly describe what you'd like the script to do.
-      placeholder: e.g. "Automate device enrollment in Intune."
+      description: What would you like this script to do?
+      placeholder: e.g. "Output a CSV of all devices enrolled into Intune."
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
       label: Details or Specific Requirements
-      description: Provide any specific details, examples, or use cases to clarify the request.
-      placeholder: e.g. "The script should generate a CSV report of enrolled devices."
+      description: Is there any extra information that would be useful?
+      placeholder: e.g. "Can the CSV file include the serial numbers of the machines?"
     validations:
-      required: true
+      required: false
