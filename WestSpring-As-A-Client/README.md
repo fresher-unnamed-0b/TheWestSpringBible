@@ -2,4 +2,4 @@
 
 This folder contains files and scripts that are part of WestSpring IT's internal Microsoft Intune deployment.
 
-⚠️ **Please do not edit or remove these files unless instructed** ⚠️
+**⚠️ Please do not edit or remove these files unless instructed ⚠️**
