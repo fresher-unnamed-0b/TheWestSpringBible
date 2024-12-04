@@ -3,7 +3,7 @@ description: Report that a script in this repository is not functioning properly
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees: 
-  -fresher-unnamed-0b
+  - fresher-unnamed-0b
 body:
   - type: markdown
     attributes:
