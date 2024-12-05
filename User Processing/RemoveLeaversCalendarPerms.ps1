@@ -1,19 +1,18 @@
-# Define the Exchange Online Management module installation check
 Write-Host "Checking for Exchange Online Management module..."
-if (-not (Get-Module -ListAvailable -Name ExchangeOnlineManagement)) {
-    Write-Host "Exchange Online Management module not found. Installing..." -ForegroundColor Yellow
+if (-not (Get-Module -Name ExchangeOnlineManagement)) {
+    Write-Host "Exchange Online Management module not found. Installing now..." -ForegroundColor Yellow
     try {
         Install-Module -Name ExchangeOnlineManagement -Force -Scope CurrentUser -ErrorAction Stop
         Write-Host "Exchange Online Management module installed successfully." -ForegroundColor Green
     } catch {
-        Write-Host "Failed to install Exchange Online Management module. Exiting script." -ForegroundColor Red
+        Write-Host "Failed to install Exchange Online Management module. Exiting now." -ForegroundColor Red
         return
     }
 } else {
     Write-Host "Exchange Online Management module is already installed." -ForegroundColor Green
 }
 
-# Import the module
+# Import the Exchange Online Management module
 Import-Module ExchangeOnlineManagement
 
 # Prompt for the leaver's email address
@@ -26,11 +25,10 @@ if (-not $emailAddress -or -not $emailAddress.Contains("@")) {
 # Split the email address into username and domain
 $userName = $emailAddress.Split("@")[0]
 $domainName = $emailAddress.Split("@")[1]
-
 Write-Host "Username: $userName"
 Write-Host "Domain: $domainName"
 
-# Connect to Exchange Online using the extracted domain name
+# Connect to Exchange Online
 Write-Host "Connecting to Exchange Online for domain: $domainName..."
 try {
     Connect-ExchangeOnline -Organization $domainName -ErrorAction Stop
@@ -88,7 +86,7 @@ try {
     Write-Host "Error processing SendOnBehalf Rights: $_" -ForegroundColor Red
 }
 
-# Remove Calendar Permissions
+# Process Calendar Permissions
 Write-Host "Processing Calendar Permissions..."
 try {
     $userMailboxes = Get-Mailbox -ResultSize Unlimited
