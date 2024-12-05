@@ -36,7 +36,7 @@ body:
     id: device_os
     attributes:
       label: What operating system and version are you using?
-      description: Pleas einclude the operating system and version.
+      description: Please include the operating system and version.
       placeholder: e.g. Windows 10, Windows 11, macOS Ventura
     validations:
       required: true
@@ -58,10 +58,17 @@ body:
         - label: No, I didn't receive any error.
     validations:
       required: false
+  - type: textarea
+    id: error_details
+    attributes:
+      label: Error Details
+      description: Paste the error message or details here.
+    validations:
+      required: false
   - type: checkboxes
     id: have_you_checked
     attributes:
       label: Have you tried the following?
       options:
-        - label: I've tried running the script both as a standard user, and with elevated privileges.
+        - label: I've tried running the script both as a standard user and with elevated privileges.
         - label: I've checked the script myself for any obvious errors or mistakes.

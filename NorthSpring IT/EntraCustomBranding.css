@@ -1,0 +1,102 @@
+/* Import Mulish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Style for the login box */
+.ext-sign-in-box {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Title text styling */
+.ext-title {
+    color: #2C3B4E;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+
+/* Subtitle and error text styling */
+.ext-subtitle,
+.ext-error {
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+}
+
+/* Input box styling */
+.ext-input.ext-text-box {
+    border: none;
+    border-bottom: 2px solid #2C3B4E;
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    outline: none;
+    padding: 10px;
+    transition: border-bottom-color 0.3s ease;
+}
+
+/* Input box hover effect */
+.ext-input.ext-text-box:hover {
+    border-bottom: 2px solid #EB86B7;
+}
+
+/* Input box error state */
+.ext-input.ext-text-box.ext-has-error {
+    border-bottom: 2px solid red;
+}
+
+/* Primary button styling */
+.ext-button.ext-primary {
+    background-color: #2C3B4E;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Primary button hover and focus effect */
+.ext-button.ext-primary:hover,
+.ext-button.ext-primary:focus {
+    background-color: #32C6F4;
+}
+
+/* Primary button active state */
+.ext-button.ext-primary:active {
+    background-color: #1A8FB7;
+}
+
+/* Secondary button styling */
+.ext-button.ext-secondary {
+    background-color: #808080;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Secondary button hover and focus effect */
+.ext-button.ext-secondary:hover,
+.ext-button.ext-secondary:focus {
+    background-color: #6E6E6E;
+}
+
+/* Secondary button active state */
+.ext-button.ext-secondary:active {
+    background-color: #5C5C5C;
+}
+
+/* Styling for promoted federated credential box */
+.ext-promoted-fed-cred-box {
+    border-radius: 20px;
+    color: #5B7383;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
