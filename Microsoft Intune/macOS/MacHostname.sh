@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Get the serial number of the Mac
-serialNumber=$(system_profiler SPHardwareDataType | awk '/Serial Number/{print $4}')
+SERIAL=$(system_profiler SPHardwareDataType | awk '/Serial Number/{print $4; exit}')
+if [[ -z "$SERIAL" ]]; then
+    exit 1
+fi
 
-# Define the new hostname
-newHostname="WS-${serialNumber}"
-
-# Set the new hostname
-sudo scutil --set HostName "$newHostname"
-sudo scutil --set LocalHostName "$newHostname"
-sudo scutil --set ComputerName "$newHostname"
+NEWNAME="WS-${SERIAL}"
+scutil --set ComputerName "$NEWNAME"
+scutil --set HostName "$NEWNAME"
+scutil --set LocalHostName "$NEWNAME"
+exit 0
