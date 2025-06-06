@@ -9,7 +9,7 @@ try {
         Install-Script Get-WindowsAutoPilotInfo -Force
     }
 } catch {
-    Write-Error "Failed to install Get-WindowsAutoPilotInfo script: $_" -ForgroupColor Red
+    Write-Host "Failed to install Get-WindowsAutoPilotInfo script: $_" -ForegroundColor Red
     return
 }
 
